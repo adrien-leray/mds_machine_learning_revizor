@@ -6,8 +6,11 @@ from django.template import loader
 from django.shortcuts import render
 
 
-def index(request):
-    return HttpResponse(render(request,"video_games_app/index.html",{}))
+# def index(request):
+#     return HttpResponse(render(request,"video_games_app/index.html",{}))
+
+def add_data(request):
+    return HttpResponse(render(request,"video_games_app/form.html",{}))
 
 def pie_chart(request):
     labels = []
