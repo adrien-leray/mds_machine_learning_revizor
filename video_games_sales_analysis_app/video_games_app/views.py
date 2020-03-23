@@ -7,5 +7,6 @@ from django.shortcuts import render
 
 
 def index(request):
-    context={}
-    return HttpResponse(render(context,"video_games_app/templates/index.html",request))
+    context = {'latest_question_list': "null"}
+
+    return HttpResponse(render(request,"video_games_app/index.html",context))
